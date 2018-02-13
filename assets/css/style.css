@@ -237,3 +237,50 @@ input[type=submit] {
   background: #4aaaa5;
   border: 0 none;
 }
+
+/* I can't figure this out - Pseudocode below */
+
+@media screen and (max-width: 980px) {
+  #main-container {
+    /* Reduce width;
+    and increase the height;
+    AND / OR
+    prevent overflow?; */
+  } 
+}
+
+@media screen and (max-width: 768px) {
+  #main-container {
+    /* Increase width to 100%;
+     clear so sidebar is below; */
+  }
+  .sidebar {
+    /* Increase width to 100% */
+  }
+}
+
+@media screen and (max-width: 640px) {
+  #masthead {
+    position: static; 
+  }
+  #logo {
+    width: 100%;
+    /* Clear so nav is below; */
+  }
+  #main-container {
+    /* Increase width to 100%;
+    clear so sidebar is below; */
+  }
+  .auth-image {
+    /* width to 100%;
+    clear so <p> is below; */
+  }
+  .work {
+    /* Clear them all so they stack;
+    AND / OR
+    positioning: static? */
+  }
+  #thankGodForBootstrap {
+    decrease-brainsize: 95%;
+  }
+}
